@@ -5,43 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERP System - Landing Page</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
         body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ecf0f1;
+        }
 
-.container {
-    text-align: center;
-}
+        .container {
+            text-align: center;
+            background: #1e2a38;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
 
-h1 {
-    color: #333;
-}
+        .logo {
+            margin-bottom: 15px;
+        }
 
-.login-selection a {
-    display: block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
+        .logo img {
+            width: 100px; /* Smaller logo size */
+            height: auto;
+        }
 
-.login-selection a:hover {
-    background-color: #0056b3;
-}
+        h1 {
+            color: #ecf0f1;
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
 
+        .login-selection a {
+            display: block;
+            margin: 10px 0;
+            padding: 12px 20px;
+            background-color: #5292ab;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-selection a:hover {
+            background-color: #16a01d;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .login-selection a {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="ERP System Logo">
+        </div>
         <h1>Welcome to ERP System</h1>
         <div class="login-selection">
             <a href="student-login.html">Student Login</a>
